@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.item {
+    width: 5vw;
+    height: 5vh;
+}
+
+.color {
+    background-color: black;
+}
