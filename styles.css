@@ -1,25 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
+   margin: 0;
+   padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
-    display: flex;
-    flex-flow: column wrap;
+button {
+    display: block;
 }
-.container {
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.canvas {
+    width: 960px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 }
 
 .item {
-    width: 5vw;
-    height: 5vh;
+    width: 5px;
+    height: 5px;
 }
 
-.color {
+.black {
     background-color: black;
 }
