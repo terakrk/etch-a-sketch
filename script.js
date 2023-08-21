@@ -9,7 +9,10 @@ black.addEventListener('click', addBlack);
         num1 = parseInt(num1);
       num2 = prompt('Second number?', '16');
         num2 = parseInt(num2);
-    const sum = num1 * num2;
+        if((num1 < 16 || num1 > 100) || (num2 < 16 || num2 > 100)) {
+            alert('The number must be between 16 and 100'); addBlack();
+        } else {
+            const sum = num1 * num2;
     for (let i = 0; i <= sum; i++) {
         const item = document.createElement('div');
         item.classList.add('item');
@@ -22,7 +25,9 @@ black.addEventListener('click', addBlack);
         )
         
     };
-};
+
+        };
+        };
     const clear = document.querySelector('#clear');
     clear.addEventListener('click', clearGrid);
 
@@ -42,8 +47,11 @@ black.addEventListener('click', addBlack);
         num1 = parseInt(num1);
       num2 = prompt('Second number?', '16');
         num2 = parseInt(num2);
-    const sum = num1 * num2;
-    for (let i = 0; i <= sum; i++) {
+        if ((num1 < 16 || num1 > 100) || (num2 < 16 || num2 > 100)) {
+            alert('The number must be between 16 and 100'); randomColors();
+        } else {
+        const sum = num1 * num2;
+            for (let i = 0; i <= sum; i++) {
         const item = document.createElement('div');
         item.classList.add('item');
         container.appendChild(item);
@@ -53,16 +61,13 @@ black.addEventListener('click', addBlack);
                 e.target.style.backgroundColor = randomRgbColor();
             }
         )
-            }
-        
-        
+            }   
     };
+};
 function randomRgbColor() {
     let r = Math.floor(Math.random() * 256);
     let g =  Math.floor(Math.random() * 256);
     let b = Math.floor(Math.random() * 256)
     return 'rgb(' + r + ',' + g + ',' + b + ')';
     };
-
-
 
