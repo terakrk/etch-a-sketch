@@ -12,15 +12,15 @@ nav {
     flex-flow: row nowrap;
 }
 .canvas {
-    width: 960px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    margin: auto;
+    width: 50%;
+   display: flex;
+   flex-flow: row wrap;
 }
 
 .item {
-    width: 5px;
-    height: 5px;
+    width: 0.4rem;
+    height: 0.4rem;
 }
 
 .black {
