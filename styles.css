@@ -9,13 +9,25 @@ button {
 }
 nav {
     display: flex;
-    flex-flow: row nowrap;
+    max-width: 4rem;
+}
+
+.buttons {
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
 }
 .canvas {
     margin: auto;
-    width: 50%;
+    max-width: 75%;
+    max-height: 75%;
    display: flex;
    flex-flow: row wrap;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .item {
