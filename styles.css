@@ -17,17 +17,17 @@ nav {
    flex-direction: column;
    gap: .5rem;
 }
-.canvas {
-    margin: auto;
-    max-width: 30rem;
-    max-height: 30rem;
-   display: flex;
-   flex-flow: row wrap;
-}
 
 .content {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.canvas {
+    border: solid 1px black;
+    margin: auto;
+   display: grid;
+   grid-template-columns: repeat(16, 1rem);
+   grid-template-rows: repeat(16, 1rem);
 }
 
 .item {
